@@ -514,7 +514,7 @@ MonoBehaviour:
   xRange: 10
   projectilePrefab: {fileID: 5102890399288549626, guid: 09736b55af32df942bee61f48de16aa6, type: 3}
   zMin: -1.5
-  zMax: 15.5
+  zMax: 3.5
   verticalInput: 0
   projectileSpawnPoint: {fileID: 504106923}
 --- !u!4 &516745610 stripped
@@ -549,8 +549,8 @@ BoxCollider:
   m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 2
-  m_Size: {x: 1, y: 3.470338, z: 1}
-  m_Center: {x: 0, y: 1.2351693, z: 0}
+  m_Size: {x: 1, y: 3, z: 0.5}
+  m_Center: {x: 0, y: 1.5, z: 0}
 --- !u!1 &534669902
 GameObject:
   m_ObjectHideFlags: 0
@@ -673,6 +673,51 @@ Transform:
   - {fileID: 425805627}
   m_Father: {fileID: 0}
   m_RootOrder: 2
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &998842458
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 998842460}
+  - component: {fileID: 998842459}
+  m_Layer: 0
+  m_Name: GameManager
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &998842459
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 998842458}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 084b4cc74d083804cb10d5dd6049c53a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  lives: 50
+--- !u!4 &998842460
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 998842458}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 9
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1164614668
 GameObject:
@@ -885,6 +930,10 @@ PrefabInstance:
       propertyPath: Animals
       value: 
       objectReference: {fileID: 718314676}
+    - target: {fileID: 1945260419, guid: 09736b55af32df942bee61f48de16aa6, type: 3}
+      propertyPath: m_Enabled
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 5102890399288549626, guid: 09736b55af32df942bee61f48de16aa6, type: 3}
       propertyPath: m_Name
       value: Food_Cookie_01
@@ -933,6 +982,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 6874521849219023527, guid: 09736b55af32df942bee61f48de16aa6, type: 3}
+      propertyPath: speed
+      value: 10
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 09736b55af32df942bee61f48de16aa6, type: 3}
 --- !u!1001 &5338251374594487280
@@ -942,6 +995,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 5203640158174843861, guid: 02cfb9b92302e1a419cf68784ae6ec78, type: 3}
+      propertyPath: m_Enabled
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 5338251375033806660, guid: 02cfb9b92302e1a419cf68784ae6ec78, type: 3}
       propertyPath: m_Name
       value: Animal_Cow_Brown
